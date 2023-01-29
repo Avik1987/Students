@@ -1,28 +1,27 @@
 import model.Students;
+import service.Service;
 
 
 public class Main {
     public static void main(String[] args) {
-        Students S1 = new Students();
-        Students S2 = new Students();
-        Students S3 = new Students();
-        Students S4 = new Students();
-        Students S5 = new Students();
-        S1.sl();
-        S2.sl();
-        S3.sl();
-
+        Students students = new Students();
+        Students S1 = students.sl();
+        Students S2 = students.sl();
+        Students S3 = students.sl();
+        Service s = new Service();
         Students[] array = {S1, S2, S3};
-        for (int i = 0; i < array.length - 1; i++) {
-            int max = 0;
-            if ((array[i].getAge() > array[i + 1].getAge()) && (array[i].getMail() == 'f') && (array[i + 1].getMail() == 'f')) {
-                max = i;
 
-            }
-            array[max].print();
-        }
-        System.out.println();
-        S1.print();
+       // System.out.println("Max Age");
+        //   s.maxAge(array);
+       // System.out.println("max Mark");
+        //  s.maxMark(array);
+       // System.out.println("Quantity boys and girls");
+        //  s.quantity(array);
+       // System.out.println("Max mark of PHD");
+       // s.maxMarkPhd(array);
+       // System.out.println("Is there PHD");
+       s.phd(array);
+
 
     }
 }

@@ -83,6 +83,7 @@ public class Students<i> {
         k.setMark(mark);
         System.out.println("Enter gender");
         char gender = sc.next().charAt(0);
+        k.setMail(gender);
         System.out.println("Enter Age");
         int age = sc.nextInt();
         k.setAge(age);
@@ -90,11 +91,10 @@ public class Students<i> {
         boolean Phd = sc.nextBoolean();
         k.setPHD(Phd);
         k.print();
-        return k;
-    }
+           return k;
 
 
-    }
+    }}
 
 
 
