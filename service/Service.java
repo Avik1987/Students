@@ -79,6 +79,27 @@ public class Service {
         } else System.out.println("There is no PHD students");
     }
 
+    public Students[] sortingByMarks(Students[] m) {
+
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 1; j < m.length-i; j++) {
+                Students temp = null;
+                if (m[j - 1].getMark() > m[j].getMark()) {
+                    temp = m[j ];
+                    m[j]  =m[j - 1] ;
+                    m[j - 1] = temp;
+                }
+            }
+
+        }
+
+        for (Students n : m) {
+            n.print();
+
+        }
+
+        return m;
+    }
 }
 
 

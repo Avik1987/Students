@@ -81,20 +81,21 @@ public class Students<i> {
         System.out.println("Enter mark");
         double mark = sc.nextDouble();
         k.setMark(mark);
-        System.out.println("Enter gender");
-        char gender = sc.next().charAt(0);
-        k.setMail(gender);
-        System.out.println("Enter Age");
-        int age = sc.nextInt();
-        k.setAge(age);
-        System.out.println("isPHD");
-        boolean Phd = sc.nextBoolean();
-        k.setPHD(Phd);
-        k.print();
-           return k;
+//      //  System.out.println("Enter gender");
+//        char gender = sc.next().charAt(0);
+//        k.setMail(gender);
+//       // System.out.println("Enter Age");
+//        int age = sc.nextInt();
+//        k.setAge(age);
+//      //  System.out.println("isPHD");
+//        boolean Phd = sc.nextBoolean();
+//        k.setPHD(Phd);
+//        k.print();
+        return k;
 
 
-    }}
+    }
+}
 
 
 

@@ -20,7 +20,9 @@ public class Main {
        // System.out.println("Max mark of PHD");
        // s.maxMarkPhd(array);
        // System.out.println("Is there PHD");
-       s.phd(array);
+      // s.phd(array);
+        System.out.println("Sorting by marks");
+        s.sortingByMarks(array);
 
 
     }
